@@ -29,11 +29,13 @@ module.exports = {
       balance: {
         type: Sequelize.INTEGER
       },
-      createdAt: {
+      created_at: {
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
         allowNull: false,
         type: Sequelize.DATE
       },
-      updatedAt: {
+      updated_at: {
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
         allowNull: false,
         type: Sequelize.DATE
       }
