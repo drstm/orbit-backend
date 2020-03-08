@@ -1,4 +1,4 @@
-// import {query} from "../../db/connection"
+import {query} from "../../db/connection"
 import { statusBasedFetch } from "../generics"
 
 export interface user {
