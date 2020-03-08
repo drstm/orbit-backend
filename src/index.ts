@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use('/api/v1', routes)
+app.use('/api', routes)
 app.use(logger("dev", {
     skip: (req, res) => {
         return res.statusCode > 400
@@ -31,5 +31,17 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port)
+console.log('   ·             *       +        ·    o');
+console.log('           \'                  |    +');
+console.log('       ()    .-.,="``"=.    - o -     ´');
+console.log('             \'=/_       :     |   ·');
+console.log('  ·       *   |  \'=._    |              ´');
+console.log('               ;     `=./`,');
+console.log('            .   \'=.__.=\' `=\      *');
+console.log('   +                         +        ·');
+console.log('       o             *            +      ·');
+console.log('*******************************************');
+console.log('*   All services in ORBIT                 *');
+console.log('*******************************************');
 console.log(`Listening on ${port}`)
 export default app; 
