@@ -1,0 +1,13 @@
+{
+    "mysql": {
+        "username": "admin",
+        "password": "B3stGu!de",
+        "database": "talewind",
+        "host": "talewind.czkcusz9mfcl.us-east-1.rds.amazonaws.com",
+        "dialect": "mysql",
+        "pool": 10,
+        "dateStrings": true,
+        "debug": false,
+        "port": 3306
+    }
+}
