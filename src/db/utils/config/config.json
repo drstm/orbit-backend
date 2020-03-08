@@ -2,13 +2,11 @@
   "development": {
     "username": "root",
     "password": "root",
-<<<<<<< HEAD
     "database": "orbit",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },
-=======
     "database": "stellar",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -39,4 +37,3 @@
     "operatorsAliases": false
   }
 }
->>>>>>> 78d8384cab24730e12b9eba9edb16e1d742ecf07
