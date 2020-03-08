@@ -1,0 +1,34 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "stellar",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "root",
+    "password": "root",
+    "database": "talewind_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "staging": {
+      "username": "admin",
+      "password": "B3stGu!de",
+      "database": "talewind",
+      "host": "talewind.czkcusz9mfcl.us-east-1.rds.amazonaws.com",
+      "dialect": "mysql",
+      "operatorsAliases": false
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  }
+}
