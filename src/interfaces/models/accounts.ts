@@ -1,6 +1,7 @@
 import {query} from "../../db/connection"
 import { statusBasedFetch } from "../generics"
 import * as request from 'superagent';
+var StellarSdk = require('stellar-sdk');
 
 const logger = require("../logger")(__filename)
 
@@ -16,7 +17,6 @@ export interface account{
 
 export const createAccount = async(options: account): Promise<statusBasedFetch> => {
     let balance = 0;
-    var StellarSdk = require('stellar-sdk');
     var server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
     
     const pair = StellarSdk.Keypair.random();
